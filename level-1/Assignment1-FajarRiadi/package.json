@@ -1,10 +1,10 @@
 {
-  "name": "Assignment1-FajarRiadi",
+  "name": "assignment1-fajarriadi",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon convertFlowchart.js"
+    "start": "nodemon elevator.js"
   },
   "dependencies": {
     "nodemon": "^2.0.7"
