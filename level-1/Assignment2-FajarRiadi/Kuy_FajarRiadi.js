@@ -1,3 +1,9 @@
+const readline = require('readline');
+const r1 = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
 const kuy = (n, x) => {
   // menampung hasil looping pada array
   let result = [];
@@ -15,9 +21,11 @@ const kuy = (n, x) => {
    * gabungkan hasil looping pada array result,
    * pisahkan tiap itemnya dengan spasi (' ')
    */
-  return result.join(' ');
+  console.log(result.join(' '));
 };
 
-console.log(kuy(10, 3)); // 1 2 Kuy! 4 5 Kuy! 7 8 Kuy! 10
-console.log(kuy(17, 5)); // 1 2 3 4 Kuy! 6 7 8 9 Kuy! 11 12 13 14 Kuy! 16 17
-console.log(kuy(5, 7)); // 1 2 3 4 5
+r1.question('Input N : ', (nth) => {
+  r1.question('Input X : ', (factor) => {
+    kuy(nth, factor);
+  });
+});
